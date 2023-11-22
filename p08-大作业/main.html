@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>山东建筑大学首页</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css">
-    
-    
+
+
 </head>
+
 <body>
     <div class="head">
         <ul>
@@ -15,7 +17,7 @@
             <li><a href="classes.html">教育教学</a></li>
             <li><a href="#">组织机构</a></li>
             <li><a href="#">科学研究</a></li>
-            <li><img  class="logo" src="src/logo.png" alt="校徽"></li>
+            <li><img class="logo" src="src/logo.png" alt="校徽"></li>
             <li><a href="#">合作交流</a></li>
             <li><a href="#">学科建设</a></li>
             <li><a href="#">校园服务</a></li>
@@ -25,7 +27,7 @@
     <div class="clr"></div>
 
 
-    
+
 
     <div class="Rotation">
 
@@ -36,9 +38,57 @@
         <div class="toggle">
             <button id="lButton">&lt;</button>
             <button id="rButton">&gt;</button>
-          </div>
+        </div>
     </div>
-    
+    <div class="all">
+
+        <div class="div1">
+            <div class="tz-title">
+                <span>焦点新闻</span>
+                <a href="https://www.sdjzu.edu.cn/info/1012/6786.htm" class="more">更多</a>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.sdjzu.edu.cn/info/1012/6786.htm"><img src="images/实践教学研讨会.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.sdjzu.edu.cn/info/1012/6786.htm">
+                        <p>山东建筑大学成功承办第七届全国高校土木工程专业实践教学研讨会</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div2">
+            <span>&nbsp;&nbsp;建大要闻</span>
+            <ul>
+                <li><a href="">山东建筑大学召开本科教育教学审核评估迎评工作调度会</a></li>
+                <li><a href="">俄罗斯工程院院士代表团访问山东建筑大学</a></li>
+                <li><a href="">全国节约用水办公室蒋牧宸主任一行来山东建筑大学专题调研高校节水利用情况</a></li>
+                <li><a href="">山东建筑大学召开干部大会宣布省委关于学校党委主要负责同志调整决定</a></li>
+                <li><a href="">山东建筑大学召开数据治理与应用推进会</a></li>
+                <li><a href="">山东建筑大学召开本科教育教学审核评估工作调度会</a></li>
+                <li><a href="">山东建筑大学举行济南森峰激光科技股份有限公司设备定向捐赠仪式</a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <span>学术文化</span>
+            <ul>
+                <li><a href="">计算机科学与技术学院承办第二届智能数据分析与挖掘学术研讨会</a></li>
+                <li><a href="">土木工程学院举办第十七期土木之光论坛学</a></li>
+                <li><a href="">全山东建筑大学在第十七届“南方测绘杯”山东省大学生测量技能大赛中喜获佳绩</a></li>
+                <li><a href="">理学院开展“法治大讲堂”活动</a></li>
+                <li><a href="">上海大学苗福光教授来山东建筑大学作学术报告</a></li>
+                <li><a href="">山东建筑大学在第十八届“挑战杯”红色专项活动中实现新突破</a></li>
+                <li><a href="">山东建筑大学城市更新设计现代产业学院院长申作伟做客第83期筑基讲坛</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="back-top"><button>
+            <p>回到<br>顶部</p>
+        </button></div>
 
 
     <div class="footer1"></div>
@@ -46,10 +96,10 @@
         <!-- <img src="./src/logo2.png" width="100%" height="100%"> -->
         <div class="ftleft"></div>
         <div class="ftcenter">
-            <p>联系我们</p><br>            
-            <p>地址:sdjzu梅一5楼</p>            
-            <p>邮箱:which@qq.com</p>            
-            <p>☆丁玉彤 ◇韦驰 </p>            
+            <p>联系我们</p><br>
+            <p>地址:sdjzu梅一5楼</p>
+            <p>邮箱:which@qq.com</p>
+            <p>☆丁玉彤 ◇韦驰 </p>
         </div>
         <div class="ftright"><img src="./src/QRcode.jpg" width="100%" height="100%"></div>
     </div>
@@ -57,70 +107,83 @@
 </body>
 
 <script>
-        
-    let slide=[{imagePath: 'images/1.jpg', caption: '航拍南京五一出城车辆：“小铁盒”缓慢前行', go: '1.html'},
-               {imagePath: 'images/2.jpg', caption: '西湖断桥客流爆满 美女城管巡逻队帅气吸睛', go: '2.html'},
-               {imagePath: 'images/3.jpg', caption: '载45人客车爆燃 瞬间被烧成空架', go: '3.html'},
-               {imagePath: 'images/4.jpg', caption: '寒流袭英法 酿酒商点蜡烛为葡萄取暖', go: '4.html'},
-               {imagePath: 'images/5.jpg', caption: '即将首飞！中国AG600两栖飞机完成首次滑行', go: '5.html'}]
 
-    
-    window.onload=function(){
+    let slide = [{ imagePath: 'images/1.jpg', caption: '航拍南京五一出城车辆：“小铁盒”缓慢前行', go: '1.html' },
+    { imagePath: 'images/2.jpg', caption: '西湖断桥客流爆满 美女城管巡逻队帅气吸睛', go: '2.html' },
+    { imagePath: 'images/3.jpg', caption: '载45人客车爆燃 瞬间被烧成空架', go: '3.html' },
+    { imagePath: 'images/4.jpg', caption: '寒流袭英法 酿酒商点蜡烛为葡萄取暖', go: '4.html' },
+    { imagePath: 'images/5.jpg', caption: '即将首飞！中国AG600两栖飞机完成首次滑行', go: '5.html' }]
+
+
+    window.onload = function () {
         scroll();
     }
 
-        let time0=0;
-        let i=0;
-        let imgPath=document.getElementById("img1");
+    let time0 = 0;
+    let i = 0;
+    let imgPath = document.getElementById("img1");
 
 
-    function scroll(){
-        time0=setInterval(function(){
-            imgPath.src=slide[i].imagePath;
+    function scroll() {
+        time0 = setInterval(function () {
+            imgPath.src = slide[i].imagePath;
             i++;
-            if(i==5){
-                i=0;
+            if (i == 5) {
+                i = 0;
             }
-            
-        },1000)
+
+        }, 1000)
     }
 
-    let hImg=document.getElementsByClassName("Rotation")[0];
+    let hImg = document.getElementsByClassName("Rotation")[0];
     console.log(hImg);
-    hImg.addEventListener("mouseenter",function(){
+    hImg.addEventListener("mouseenter", function () {
         clearInterval(time0)
     });
-    hImg.addEventListener("mouseleave",function(){
+    hImg.addEventListener("mouseleave", function () {
         scroll();
     });
 
-    
-    let lButton=document.getElementById("lButton");
-    let rButton=document.getElementById("rButton");
 
-    lButton.addEventListener("click",function(){
-        if(i==0){
-            i=4;
-            imgPath.src=slide[i].imagePath;
+    let lButton = document.getElementById("lButton");
+    let rButton = document.getElementById("rButton");
+
+    lButton.addEventListener("click", function () {
+        if (i == 0) {
+            i = 4;
+            imgPath.src = slide[i].imagePath;
         }
-        else{
+        else {
             i--;
-            imgPath.src=slide[i].imagePath;
+            imgPath.src = slide[i].imagePath;
         }
 
     });
-    rButton.addEventListener("click",function(){
-        if(i==4){
-            i=0;
-            imgPath.src=slide[i].imagePath;
+    rButton.addEventListener("click", function () {
+        if (i == 4) {
+            i = 0;
+            imgPath.src = slide[i].imagePath;
         }
-        else{
+        else {
             i++;
-            imgPath.src=slide[i].imagePath;
+            imgPath.src = slide[i].imagePath;
         }
 
     });
-        
+    backTop = document.querySelector('.back-top')
+    window.addEventListener('scroll', function () {
+        const n = document.documentElement.scrollTop
+        if (n >= 100) {
+            backTop.style.display = 'block'
+        } else {
+            backTop.style.display = 'none'
+        }
+    })
+    button = document.querySelector('.back-top button')
+    button.addEventListener('click', function () {
+        document.documentElement.scrollTop = 0
+    })
 
 </script>
+
 </html>
