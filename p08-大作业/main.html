@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山东建筑大学首页</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    
+    
+</head>
+<body>
+    <div class="head">
+        <ul>
+            <li><a href="main.html">山建概况</a></li>
+            <li><a href="classes.html">教育教学</a></li>
+            <li><a href="#">组织机构</a></li>
+            <li><a href="#">科学研究</a></li>
+            <li><img  class="logo" src="src/logo.png" alt="校徽"></li>
+            <li><a href="#">合作交流</a></li>
+            <li><a href="#">学科建设</a></li>
+            <li><a href="#">校园服务</a></li>
+            <li><a href="log.html">邮箱登录</a></li>
+        </ul>
+    </div>
+    <div class="clr"></div>
+
+
+    
+
+    <div class="Rotation">
+
+        <div class="img">
+            <img id="img1" src="">
+        </div>
+
+        <div class="toggle">
+            <button id="lButton">&lt;</button>
+            <button id="rButton">&gt;</button>
+          </div>
+    </div>
+    
+
+
+    <div class="footer1"></div>
+    <div class="footer2">
+        <!-- <img src="./src/logo2.png" width="100%" height="100%"> -->
+        <div class="ftleft"></div>
+        <div class="ftcenter">
+            <p>联系我们</p><br>            
+            <p>地址:sdjzu梅一5楼</p>            
+            <p>邮箱:which@qq.com</p>            
+            <p>☆丁玉彤 ◇韦驰 </p>            
+        </div>
+        <div class="ftright"><img src="./src/QRcode.jpg" width="100%" height="100%"></div>
+    </div>
+    <div class="footer3">版权所有 © 山东建筑大学 author 丁玉彤 韦驰 </div>
+</body>
+
+<script>
+        
+    let slide=[{imagePath: 'images/1.jpg', caption: '航拍南京五一出城车辆：“小铁盒”缓慢前行', go: '1.html'},
+               {imagePath: 'images/2.jpg', caption: '西湖断桥客流爆满 美女城管巡逻队帅气吸睛', go: '2.html'},
+               {imagePath: 'images/3.jpg', caption: '载45人客车爆燃 瞬间被烧成空架', go: '3.html'},
+               {imagePath: 'images/4.jpg', caption: '寒流袭英法 酿酒商点蜡烛为葡萄取暖', go: '4.html'},
+               {imagePath: 'images/5.jpg', caption: '即将首飞！中国AG600两栖飞机完成首次滑行', go: '5.html'}]
+
+    
+    window.onload=function(){
+        scroll();
+    }
+
+        let time0=0;
+        let i=0;
+        let imgPath=document.getElementById("img1");
+
+
+    function scroll(){
+        time0=setInterval(function(){
+            imgPath.src=slide[i].imagePath;
+            i++;
+            if(i==5){
+                i=0;
+            }
+            
+        },1000)
+    }
+
+    let hImg=document.getElementsByClassName("Rotation")[0];
+    console.log(hImg);
+    hImg.addEventListener("mouseenter",function(){
+        clearInterval(time0)
+    });
+    hImg.addEventListener("mouseleave",function(){
+        scroll();
+    });
+
+    
+    let lButton=document.getElementById("lButton");
+    let rButton=document.getElementById("rButton");
+
+    lButton.addEventListener("click",function(){
+        if(i==0){
+            i=4;
+            imgPath.src=slide[i].imagePath;
+        }
+        else{
+            i--;
+            imgPath.src=slide[i].imagePath;
+        }
+
+    });
+    rButton.addEventListener("click",function(){
+        if(i==4){
+            i=0;
+            imgPath.src=slide[i].imagePath;
+        }
+        else{
+            i++;
+            imgPath.src=slide[i].imagePath;
+        }
+
+    });
+        
+
+</script>
+</html>
