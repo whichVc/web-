@@ -1,0 +1,30 @@
+.main{
+    position: relative;
+    left:20%;
+    top:28%;
+    width: 1000px;
+    height: 500px;
+    background-color: pink;
+}
+
+.left{
+    
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+
+}
+
+#limg{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+}
